@@ -43,11 +43,10 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
   if(!session?.activeSubscription){
     return {
       redirect: {
-        destination: '/',
+        destination: `/posts/preview/${slug}`,
         permanent: false
       }
     }
-    
   }
 
   const prismic = getPrismicClient(req)
@@ -67,6 +66,6 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
 
   return {
     props: { post },
-    revalidate: 60 * 30 // 30 minutes
+    redirect: 60 * 30 // 30 minutes
   }
 }
