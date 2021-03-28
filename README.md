@@ -46,7 +46,7 @@ um CMS, prismic para a administração dos conteúdos, o stripe para a realizaç
 
 <span align="center">
 	<h2>Demonstração</h2>
-	<img alt="Ignews" title="#Ignews" src=".github/ignews.gif" height="300px" />
+	<img alt="Ignews" title="#Ignews" src=".github/ignews.gif" />
 </span>
 
 ### ⚒ Iniciando <a name = "getting_started"></a>
